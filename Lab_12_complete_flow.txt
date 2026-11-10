@@ -1,0 +1,31 @@
+============================================================
+LAB 12: CONTINUOUS MONITORING & RETRAINING COMPLETE FLOW
+============================================================
+
+1. Simulated Monitoring Data & Drift Generation
+   - Generate evolved dataset with distribution shift
+   - Create concept drift and data drift scenarios
+
+2. Drift Detection & Statistical Analysis
+   - Kolomogorov-Smirnov / Wasserstein tests on numerical features
+   - Chi-Square test on categorical distributions
+   - Prediction probability drift monitoring
+
+3. Automated Trigger & Model Retraining
+   - Trigger retraining pipeline when drift surpasses threshold
+   - Fit retrained model (Model v2) with updated dataset
+   - Evaluate against champion production model
+
+4. Model Comparison & MLflow Model Registry Update
+   - Quality gate comparison: Champion vs Challenger
+   - Promote challenger to Staging / Production if criteria met
+   - Update model lineage and metadata
+
+Execution scripts:
+  python src/mlops_pipeline/12_create_evolved_dataset.py
+  python src/mlops_pipeline/12_data_drift.py
+  python src/mlops_pipeline/12_concept_drift.py
+  python src/mlops_pipeline/12_retrain_model.py
+  python src/mlops_pipeline/12_model_comparison.py
+  python src/mlops_pipeline/12_update_mlflow_registry.py
+============================================================

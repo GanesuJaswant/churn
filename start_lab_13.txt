@@ -1,0 +1,20 @@
+============================================================
+LAB 13: END-TO-END AUTOMATION & CI/CD PIPELINES
+============================================================
+
+Overview:
+Lab 13 automates the complete MLOps lifecycle from ingestion to
+continuous monitoring using GitHub Actions and automated triggers.
+
+Workflows configured in .github/workflows/:
+- lab13_monitoring.yml: Scheduled and event-driven monitoring
+- lab13_runner_test.yml: Self-hosted / GitHub runner integration test
+- lab8_ci.yml: CI test suite
+- lab9_failure_tests.yml: Pipeline robustness and failure tests
+
+Local Execution:
+To run the automated lifecycle locally:
+  python src/automate_lifecycle.py
+or
+  python src/mlops_pipeline/churn_prediction_pipeline.py
+============================================================
